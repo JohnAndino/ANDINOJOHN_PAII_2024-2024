@@ -4,5 +4,6 @@
 /**
  * 
  */
-module Proyecto003 {
+module GalagaGame {
+	requires java.desktop;
 }
