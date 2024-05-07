@@ -8,6 +8,11 @@ import model.dataBaseManager.ConectToSQL;
 import model.persons.Alumns;
 import model.persons.Professor;
 
+/**
+ * @author John Andino
+ * 
+ * 
+**/
 public class Main {
 
 	public static void main(String[] args) throws SQLException {
