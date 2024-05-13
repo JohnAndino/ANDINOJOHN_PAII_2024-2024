@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="models.Schedule" table="schedule">
+        <id name="id" column="schedule_id">
+            <generator class="assigned"/>
+        </id>
+        <many-to-one name="subject" column="subject_id"/>
+        <many-to-one name="student" column="student_id"/>
+        <many-to-one name="professor" column="professor_id"/>
+        <property name="startTime" column="start_time"/>
+        <property name="endTime" column="end_time"/>
+        <property name="day" column="day"/>
+    </class>
+</hibernate-mapping>
